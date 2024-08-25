@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-font: 'Montserrat', sans-serif;
+    --button-font: 'Raleway', sans-serif;
+
+    --btn-color: #4CBB17;
+    --weather-bg: #A9A9A9;
+}
+
+/*#region Mobile Portrait Start */
+
+@media screen and (orientation: portrait) and (max-width: 750px) {
+    body {
+        margin: 10px;
+    }
+
+
+    .box_cont {
+        display: flex;
+        align-items: center;
+    }
+
+    #box_label {
+        font-size: 40px;
+        text-align: center;
+        font-family: var(--primary-font);
+        margin-bottom: 2rem;
+    }
+
+    .box_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .box_content input {
+        font-family: var(--primary-font);
+        padding-inline: 1rem;
+        padding-block: 0.8em;
+        width: 60%;
+        border: 1.4px black solid;
+        border-radius: 5px;
+    }
+
+    .box_content button {
+        font-family: var(--button-font);
+        padding: 0.8rem;
+        background-color: var(--btn-color);
+        border: 4px;
+        border-radius: 4px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .box_content button:focus {
+        transform: scale(1.1);
+        color: white;
+    }
+
+    .box_content #weatherDetails {
+        width: max-content;
+        height: max-content;
+        padding: 0.8rem;
+        font-family: var(--primary-font);
+        font-size: 20px;
+    }
+
+    .location_saved h2 {
+        font-family: var(--primary-font);
+        font-size: 20px;
+    }
+
+    .location_saved h2:hover {
+        text-decoration: underline;
+    }
+
+    .location_saved ul {
+        font-family: var(--primary-font);
+        font-size: 14px;
+    }
+}
+
+/*#endregion Mobile Portrait End */
+
+/*#region Mobile Landscape Start */
+
+@media screen and (orientation: landscape) and (min-width: 550px) and (max-width: 1920px) {
+    body {
+        margin: 10px;
+    }
+
+
+    .box_cont {
+        display: flex;
+        align-items: center;
+    }
+
+    #box_label {
+        font-size: 40px;
+        text-align: center;
+        font-family: var(--primary-font);
+        margin-bottom: 2rem;
+    }
+
+    .box_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .box_content input {
+        font-family: var(--primary-font);
+        padding-inline: 1rem;
+        padding-block: 0.8em;
+        width: 60%;
+        border: 1.4px black solid;
+        border-radius: 5px;
+    }
+
+    .box_content button {
+        font-family: var(--button-font);
+        padding: 0.8rem;
+        background-color: var(--btn-color);
+        border: 4px;
+        border-radius: 4px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .box_content button:focus {
+        transform: scale(1.1);
+        color: white;
+    }
+
+    .box_content #weatherDetails {
+        width: max-content;
+        height: max-content;
+        padding: 0.8rem;
+        font-family: var(--primary-font);
+        font-size: 20px;
+    }
+
+    .location_saved h2 {
+        font-family: var(--primary-font);
+        font-size: 20px;
+    }
+
+    .location_saved h2:hover {
+        text-decoration: underline;
+    }
+
+    .location_saved ul {
+        font-family: var(--primary-font);
+        font-size: 14px;
+    }
+}
+
+/*#endregion Mobile Landscape End */
